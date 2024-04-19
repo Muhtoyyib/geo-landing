@@ -5,6 +5,10 @@
     @include flexContainer(2rem);
     position: relative;
 
+    @include respond(tab-land){
+        padding: 3rem;
+    }
+
     @include respond(tab-port){
         padding: 2rem 0rem;
     }
@@ -18,8 +22,12 @@
         padding: 1rem;
         margin-top: 15rem;
 
+        @include respond(tab-land){
+            @include flexibleBox(45%);
+        }
+
         @include respond(tab-port){
-            @include flexibleBox(10%);
+            @include flexibleBox(5%);
         }
 
         @include respond(phone){
@@ -42,6 +50,14 @@
                 animation-name: moveInLeft;
                 animation-duration: 1s;
                 animation-timing-function: ease-out;
+
+                @include respond(tab-land){
+                    font-size: 3rem;
+                }
+
+                @include respond(tab-port){
+                    font-size: 3rem;
+                }
                 
                 @include respond(phone) {
                     letter-spacing: 1rem;
@@ -62,10 +78,16 @@
                 color: $color-primary;
                 letter-spacing: 1.75rem;
                 animation: moveInRight 1s ease-out;
-                height: 11vh;
+                height: 10vh;
+
+                @include respond(tab-port){
+                    height: 6vh;
+                    font-size: 3.5rem;
+                }
         
                 @include respond(phone) {
                     letter-spacing: .5rem;
+                    height: 8vh;
                 }
 
                 @include respond(small-phone) {
@@ -81,6 +103,10 @@
             line-height: 2rem;
             color: $color-grey-dark-2;
 
+            @include respond(tab-port){
+                font-size: 1.2rem;
+            }
+
             @include respond(phone){
                 font-size: 1.3rem;
             }
@@ -90,7 +116,20 @@
     &--buttons{
         @include flexContainer(2rem);
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+
+        @include respond(tab-port){
+            @include flexContainer(1.2rem);
+            justify-content: space-between;
+        }
+
+        @include respond(phone){
+            justify-content: space-around;
+        }
+
+        @include respond(small-phone){
+            justify-content: space-between;
+        }
     }
 
     &--img{

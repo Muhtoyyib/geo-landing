@@ -96,6 +96,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-content: space-between;
   box-shadow: 0 1rem 2rem rgba(134, 142, 150, 0.2);
   color: #495057; }
+  @media only screen and (max-width: 75em) {
+    .nav {
+      padding: 1.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      padding: 2rem; } }
   @media only screen and (max-width: 768px) {
     .nav {
       padding: 1rem; } }
@@ -156,6 +162,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     background-color: #000;
     color: #fff;
     font-weight: 500; }
+    @media only screen and (max-width: 56.25em) {
+      .btn--primary {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+        font-size: 1.2rem; } }
     @media only screen and (max-width: 768px) {
       .btn--primary {
         font-size: 1.2rem;
@@ -197,6 +210,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   gap: 2rem;
   flex-wrap: wrap;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .overview {
+      padding: 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .overview {
       padding: 2rem 0rem; } }
@@ -208,9 +224,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     flex-grow: 1;
     padding: 1rem;
     margin-top: 15rem; }
+    @media only screen and (max-width: 75em) {
+      .overview--info {
+        flex-basis: 45%;
+        flex-grow: 1; } }
     @media only screen and (max-width: 56.25em) {
       .overview--info {
-        flex-basis: 10%;
+        flex-basis: 5%;
         flex-grow: 1; } }
     @media only screen and (max-width: 768px) {
       .overview--info {
@@ -228,6 +248,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out; }
+        @media only screen and (max-width: 75em) {
+          .overview--info__heading-primary--main {
+            font-size: 3rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .overview--info__heading-primary--main {
+            font-size: 3rem; } }
         @media only screen and (max-width: 768px) {
           .overview--info__heading-primary--main {
             letter-spacing: 1rem;
@@ -244,10 +270,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
         color: #37b24d;
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
-        height: 11vh; }
+        height: 10vh; }
+        @media only screen and (max-width: 56.25em) {
+          .overview--info__heading-primary--sub {
+            height: 6vh;
+            font-size: 3.5rem; } }
         @media only screen and (max-width: 768px) {
           .overview--info__heading-primary--sub {
-            letter-spacing: .5rem; } }
+            letter-spacing: .5rem;
+            height: 8vh; } }
         @media only screen and (max-width: 768px) {
           .overview--info__heading-primary--sub {
             letter-spacing: .5rem;
@@ -257,6 +288,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding: 2rem 0;
       line-height: 2rem;
       color: #495057; }
+      @media only screen and (max-width: 56.25em) {
+        .overview--info__heading-secondary {
+          font-size: 1.2rem; } }
       @media only screen and (max-width: 768px) {
         .overview--info__heading-secondary {
           font-size: 1.3rem; } }
@@ -266,6 +300,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .overview--buttons {
+        display: flex;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: space-between; } }
+    @media only screen and (max-width: 768px) {
+      .overview--buttons {
+        justify-content: space-around; } }
+    @media only screen and (max-width: 768px) {
+      .overview--buttons {
+        justify-content: space-between; } }
   .overview--img {
     flex-basis: 35rem;
     flex-grow: 1;
@@ -404,10 +450,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
     position: absolute;
     top: calc(-100% + 15rem);
     left: calc(50% - 30%); }
+    @media only screen and (max-width: 56.25em) {
+      .footer--getAppCta {
+        padding: 5rem 10rem 10rem 11.5rem;
+        width: 80%; } }
     @media only screen and (max-width: 768px) {
       .footer--getAppCta {
         width: 80%;
         padding: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer--getAppCta {
+        top: calc(-100% + 15rem);
+        left: calc(50% - 39%); } }
     @media only screen and (max-width: 768px) {
       .footer--getAppCta {
         top: calc(-100% + 8rem);
@@ -415,6 +469,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .footer--getAppCta__content {
       width: 80%;
       margin: auto; }
+      @media only screen and (max-width: 56.25em) {
+        .footer--getAppCta__content {
+          width: 98%; } }
       @media only screen and (max-width: 768px) {
         .footer--getAppCta__content {
           width: 90%; } }
@@ -439,6 +496,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .footer--getAppCta__links {
       width: 34%;
       margin: 4rem auto 0 auto; }
+      @media only screen and (max-width: 75em) {
+        .footer--getAppCta__links {
+          width: 70%; } }
+      @media only screen and (max-width: 56.25em) {
+        .footer--getAppCta__links {
+          width: 50%; } }
       @media only screen and (max-width: 768px) {
         .footer--getAppCta__links {
           width: 70%;
@@ -496,12 +559,23 @@ ORDER: Base + typography > general layout + grid > page layout > components
         display: flex;
         gap: 3rem;
         flex-wrap: wrap; }
+        @media only screen and (max-width: 75em) {
+          .footer--about__left--item {
+            display: flex;
+            gap: 0.1rem;
+            flex-wrap: wrap;
+            margin-top: 1.2rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .footer--about__left--item {
+            display: flex;
+            gap: 0.1rem;
+            flex-wrap: wrap;
+            margin-top: 1.2rem; } }
         @media only screen and (max-width: 768px) {
           .footer--about__left--item {
             display: flex;
             gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1.2rem; } }
+            flex-wrap: wrap; } }
         .footer--about__left--item--link {
           text-decoration: none;
           font-size: 1.3rem;
@@ -533,6 +607,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-size: 1.3rem;
         display: flex;
         justify-content: flex-end; }
+        @media only screen and (max-width: 75em) {
+          .footer--about__right--bottom {
+            margin-top: 6rem; } }
+        @media only screen and (max-width: 768px) {
+          .footer--about__right--bottom {
+            margin-top: 3.5rem; } }
   .footer--form {
     width: 45%;
     margin: auto; }
