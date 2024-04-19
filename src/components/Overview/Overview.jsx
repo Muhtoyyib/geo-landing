@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 import { GooglePlayLogo, AppStoreLogo } from "@phosphor-icons/react";
 
-import OverviewImg from '../../assets/GEO WEBAPP.png';
+import OverviewImg from '../../assets/abc.svg';
 
 function Overview() {
 

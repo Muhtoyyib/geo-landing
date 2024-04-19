@@ -50,13 +50,13 @@
     }
 
     &--getApp {
-        @include flexContainer(.5rem);
+        @include flexContainer(1rem);
         align-items: center;
         padding: 1.5rem 3rem;
         background-color: $color-black;
         color: $color-white;
         border-radius: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       
         a {
           text-decoration: none;

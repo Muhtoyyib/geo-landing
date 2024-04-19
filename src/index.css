@@ -182,14 +182,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     background-color: #fff; }
   .btn--getApp {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
     padding: 1.5rem 3rem;
     background-color: #000;
     color: #fff;
     border-radius: 1rem;
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
     .btn--getApp a {
       text-decoration: none;
       color: inherit; }
@@ -319,7 +319,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    object-fit: cover; }
     @media only screen and (max-width: 56.25em) {
       .overview--img {
         flex-basis: 20%;
@@ -350,7 +351,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     align-items: center;
     height: 70vh; }
     .service--container img {
-      max-width: 100%; }
+      max-width: 100%;
+      border-radius: 2rem; }
     .service--container--content {
       text-align: center; }
     .service--container ul {
@@ -427,7 +429,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-size: 1.2rem; } }
   .modal-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 4rem; }
 
 .modal-container {

@@ -8,7 +8,8 @@ import LandFoot from './Footer/Footer'
 
 import Button from './Button/Button'
 
-import Data from "../assets/data.svg";
+import Test from '../assets/cardifywallets.jpg';
+// import Data from "../assets/data.svg";
 import Utility from "../assets/utility.svg";
 import Exam from "../assets/Exam.svg";
 
@@ -33,7 +34,7 @@ function Landing() {
             Effortless Solutions at Your Fingertips
           </h2>
 
-          <Service img={{src: Data,  alt: 'Buy Data'}} heading="Stay Connected Anytime, Anywhere"
+          <Service img={{src: Test,  alt: 'Buy Data'}} heading="Stay Connected Anytime, Anywhere"
           description="Connect seamlessly with your loved ones and business contacts. Whether it's browsing, streaming, or staying in touch, we've got you covered."
           layout="left" bullet={['Access affordable data bundles', 'Buy airtime for mobile phones.', 'Card Printing']}>
         </Service>

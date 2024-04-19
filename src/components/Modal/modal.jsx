@@ -14,12 +14,12 @@ function Modal({ className, children, description}) {
             </p>
 
             <div className="modal-buttons">
-              <Button type='b' className="btn btn--getApp">
+              <Button type='b' link={`https://play.google.com/store/apps/details?id=com.kineticdevelopers.billspaymentafrica`} className="btn btn--getApp">
                 <GooglePlayLogo size={32} color="#37b24d" />
                 Get on Playstore
               </Button>
 
-              <Button type='b' className="btn btn--getApp">
+              <Button type='a' link={`#`} className="btn btn--getApp">
                 <AppStoreLogo size={32} color="#37b24d" />
                 Get on App store
               </Button>

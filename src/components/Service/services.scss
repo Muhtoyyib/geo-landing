@@ -12,9 +12,11 @@
         display: flex;
         align-items: center;
         height: 70vh;
+       
 
         img{
             max-width: 100%;
+            border-radius: 2rem;
         }
 
         &--content{

@@ -1,4 +1,4 @@
-import { InstagramLogo, FacebookLogo, XLogo, TelegramLogo, YoutubeLogo } from "@phosphor-icons/react";
+import { InstagramLogo, XLogo, TelegramLogo, YoutubeLogo,TiktokLogo } from "@phosphor-icons/react";
 
 import LogoImg from '../../assets/logo-removebg-preview.png'
 
@@ -20,19 +20,19 @@ export default function Footer(){
                         </p>
 
                         <div className="footer--getAppCta__links">
-                            <Button type="a" link={`#`} className="footer--getAppCta__links--link">
+                            <Button type="a" link={`https://www.instagram.com/geotopup`} className="footer--getAppCta__links--link">
                             <InstagramLogo size={32} color="#000" />
                             </Button>
 
-                            <Button type="a" link={`#`} className="footer--getAppCta__links--link">
-                            <FacebookLogo size={32} color="#000" />
+                            <Button type="a" link={`https://www.tiktok.com/@geotopup`} className="footer--getAppCta__links--link">
+                            <TiktokLogo size={32} color="#000" />
                             </Button>
 
-                            <Button type="a" link={`#`} className="footer--getAppCta__links--link">
+                            <Button type="a" link={`https://twitter.com/geotopup`} className="footer--getAppCta__links--link">
                             <XLogo size={32} color="#000" />
                             </Button>
 
-                            <Button type="a" link={`#`} className="footer--getAppCta__links--link">
+                            <Button type="a" link={`https://t.me/geotopupdata`} className="footer--getAppCta__links--link">
                             <TelegramLogo size={32} color="#000" />
                             </Button>
 
@@ -66,7 +66,7 @@ export default function Footer(){
 
                 <div className="footer--about__right">
                     <div className="footer--about__right--top">
-                        <p> Contact us  <a href="mailto:hello@geotopup.com" className="email"> hello@geotopup.com </a></p>
+                        <p> Contact us  <a href="mailto:geotopupng@gmail.com" className="email"> geotopupng@gmail.com </a></p>
                     </div>
 
                     <div className="footer--about__right--bottom">
