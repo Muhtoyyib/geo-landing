@@ -1,0 +1,33 @@
+.earn{
+    background-color: rgba($color-primary-dark, .9);
+    color: $color-white;
+    padding: 11rem;
+    text-align: center;
+
+    p{
+        font-size: 2.5rem;
+    }
+
+    &--btn{
+        display: inline-block;
+        margin-top: 2rem;
+    }
+}
+
+.services{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.container.blur {
+    filter: blur(5px);
+    pointer-events: none;
+  }

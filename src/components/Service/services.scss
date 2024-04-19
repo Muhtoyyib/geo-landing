@@ -1,0 +1,44 @@
+.service{
+    @include flexContainer(10rem);
+    background-color: $color-white;
+    padding: 0 15rem;
+
+    @include respond(phone){
+        padding: 2rem;
+    }
+
+    &--container{
+        @include flexibleBox(30rem);
+        display: flex;
+        align-items: center;
+        height: 70vh;
+
+        img{
+            max-width: 100%;
+        }
+
+        &--content{
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 2rem 0;
+
+            li{
+                display: flex;
+                align-items: center;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &--heading{
+        font-size: 4rem;
+        padding: 3rem 0;
+    }
+
+    &--paragraph{
+        font-size: 1.5rem;
+    }
+}

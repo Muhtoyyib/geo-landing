@@ -1,0 +1,70 @@
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: .6rem;
+    border: 1px solid rgba($color-grey-dark-1, .7);
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &--nav{
+        color: $color-white;
+        background-color: $color-primary;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+
+        @include respond(phone){
+            font-size: 1.6rem;
+        }
+
+        @include respond(small-phone){
+            font-size: 1.4rem;
+        }
+    }
+
+    &--primary{
+       @include flexContainer(1rem);
+       align-items: center;
+       padding: 1rem 2.5rem;
+       font-size: 1.8rem;
+       background-color: $color-black;
+       color: $color-white;
+       font-weight: 500;
+
+       @include respond(phone){
+        font-size: 1.2rem;
+        @include flexContainer(.5rem);
+        padding: 1rem;
+       }
+    }
+
+    &--secondary{
+        text-decoration: none;
+        color: $color-black;
+        background-color: $color-white;
+    }
+
+    &--getApp {
+        @include flexContainer(.5rem);
+        align-items: center;
+        padding: 1.5rem 3rem;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+      
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      
+        @include respond(tab-port) {
+          padding: 1rem 2rem;
+          font-size: 1rem;
+        }
+      
+        @include respond(phone) {
+          padding: 1.2rem 1rem;
+          font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,204 @@
+.footer{
+  padding: 20rem 10rem 10rem 10rem;
+  background-color:rgba($color-black, .9);
+  margin-top: 20rem;
+  position: relative;
+
+  @include respond(small-phone){
+    padding: 10rem;
+  }
+  
+
+  &--getAppCta{
+      width: 60%;
+      margin: auto;
+      background-color: $color-primary-dark;
+      border-radius: 2rem;
+      padding: 5rem 10rem 10rem 10rem;
+
+      @include respond(small-phone){
+        width: 80%;
+        padding: 2rem;
+      }
+
+      position: absolute;
+      top: calc(-100% + 15rem); 
+      left: calc(50% - 30%); 
+
+      @include respond(small-phone){
+        top: calc(-100% + 8rem); 
+      left: calc(50% - 40%);
+      }
+
+      &__content{
+          width: 80%;
+          margin: auto;
+
+          @include respond(small-phone){
+            width: 90%;
+          }
+
+          h3{
+              font-size: 2.8rem;
+              font-weight: 700;
+              text-align: center;
+              color: $color-white;
+              padding: 2rem;
+              letter-spacing: .15rem;
+
+              @include respond(small-phone){
+                font-size: 2rem;
+              }
+          }
+
+         p{
+          text-align: center;
+          font-size: 1.4rem;
+          color: $color-white;
+          letter-spacing: .1rem;
+
+          @include respond(small-phone){
+            font-size: 1.2rem;
+          }
+         }
+      }
+
+      &__links{
+        width: 34%;
+        margin: 4rem auto 0 auto;
+
+        @include respond(small-phone){
+          width: 70%;
+          margin: 2rem auto;
+        }
+
+
+        &--link{
+          padding: .5rem;
+
+          @include respond(small-phone){
+            padding: .01rem;
+          }
+        }
+      }
+  }
+
+  &--joinWaitListCta {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  
+    @include respond(small-phone) {
+      width: 100%;
+      padding: 2rem 0;
+
+      display: none;
+    }
+  
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+      color: $color-white;
+      font-weight: 600;
+  
+      @include respond(small-phone) {
+        font-size: 2rem;
+      }
+    }
+  
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $color-primary;
+      font-weight: 500;
+      padding: 1.6rem;
+  
+      @include respond(small-phone) {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+  
+
+  &--about {
+    padding: 2rem 10rem 5rem 10rem;
+    background-color: $color-black;
+    border-top: 1px solid rgba($color-grey-dark-1, .2);
+    @include flexContainer(1rem);
+    justify-content: space-between;
+  
+    @include respond(small-phone) {
+      padding: 1rem;
+    }
+  
+    &__left {
+      padding: 2rem;
+  
+      @include respond(small-phone) {
+        padding: 1rem;
+      }
+  
+      &--item {
+        margin-top: 2rem;
+        @include flexContainer(3rem);
+  
+        @include respond(small-phone) {
+          @include flexContainer(1rem);
+          margin-top: 1.2rem;
+        }
+  
+        &--link {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: #adb5bd;
+          font-weight: 600;
+          padding: 1.5rem 0; // Adjust padding as needed for small phones
+        }
+      }
+    }
+  
+    &__right {
+      padding: 4rem 2rem;
+      color: #adb5bd;
+      font-weight: 600;
+
+      @include respond(small-phone){
+        padding: .5rem 1rem;
+      }
+  
+      &--top {
+        @include flexContainer(3rem);
+        font-size: 1.3rem;
+        justify-content: space-between;
+  
+        p {
+          @include flexContainer(.3rem);
+          align-items: center;
+  
+          .email {
+            color: $color-primary;
+          }
+        }
+      }
+  
+      &--bottom {
+        margin-top: 3.5rem; // Adjust margin-top for small phones
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  
+
+  &--form{
+    width: 45%;
+    margin: auto;
+  }
+
+  &--brand{
+    color: #adb5bd;
+  }
+  
+}

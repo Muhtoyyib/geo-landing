@@ -1,0 +1,48 @@
+.form{
+    position: relative;
+    width: 100%;
+
+    &--input{
+        width: 100%;
+        padding: 1.25rem 4.5rem;
+        border: .01rem solid rgba($color-grey,.7);
+        border-radius: .5rem;
+        position: relative;
+        color: rgba($color-grey, .7);
+        outline: none;
+
+        @include respond(small-phone){
+    
+
+        }
+
+        &__icon{
+            position: absolute;
+            top: 2.5rem;
+            left: 1rem;
+        }
+    }
+
+    &--waitlist{
+        @include flexContainer(1rem);
+        align-items: center;
+        padding: 2rem 0;
+
+        @include respond(small-phone){
+            @include flexContainer(.5rem);
+            padding: 0;
+        }
+    }
+
+    &--error{
+        color: $color-error !important;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    &--success{
+        color: $color-success !important;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}

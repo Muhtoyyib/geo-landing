@@ -1,0 +1,55 @@
+.nav {
+    display: flex;
+    padding: 2rem 10rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1rem 2rem rgba($color-grey-dark-1, .2);
+    color: $color-grey-dark-2;
+
+    @include respond(phone){
+        padding: 1rem;
+    }
+
+    @include respond(small-phone){
+        padding: 0.8rem;
+    }
+  
+    &--brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: flex-start;
+      color: inherit;
+  
+      img {
+        width: 6rem;
+
+        @include respond(phone){
+            width: 4rem;
+        }
+
+        @include respond(small-phone){
+            width: 3rem;
+        }
+      }
+  
+      h1 {
+        font-size: 2.1rem;
+
+        @include respond(phone){
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone){
+            font-size: 1.6rem;
+        }
+      }
+    }
+  
+    &--button {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  }
+  

@@ -1,0 +1,45 @@
+.faq{
+    padding: 5rem;
+
+    &--header{
+        font-size: 3rem;
+        text-align: center;
+        padding: 3rem  0;
+    }
+
+    &--description{
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 0 4rem 0;
+        color: $color-grey-dark-2;
+    }
+
+    &--item{
+        width: 70%;
+        padding: 3rem 2rem;
+        margin: 2rem auto;
+        border: .01rem solid rgba($color-grey-dark-2,.3);
+
+        @include respond(phone){
+            width: 100%;
+        }
+
+        &__header{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                color: $color-grey-dark-3;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+
+        &__content{
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 2rem 0rem 0 0;
+            color: rgba( $color-grey-dark-2,  1);
+        }
+    }
+}

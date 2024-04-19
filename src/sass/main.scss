@@ -1,0 +1,15 @@
+@import  "./base";
+@import "./mixins";
+@import "./variables";
+@import "./animations";
+
+@import "../App.scss";
+
+@import  "../components/Nav/nav.scss";
+@import "../components/Button/button";
+@import "../components/Overview/overview";
+@import "../components/Service/services.scss";
+@import "../components/FAQ/faq";
+@import "../components/Modal/modal";
+@import "../components//Footer/footer";
+@import "../components/Form/form";
