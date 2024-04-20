@@ -299,19 +299,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
     gap: 2rem;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-around; }
     @media only screen and (max-width: 56.25em) {
       .overview--buttons {
         display: flex;
         gap: 1.2rem;
         flex-wrap: wrap;
-        justify-content: space-between; } }
-    @media only screen and (max-width: 768px) {
-      .overview--buttons {
-        justify-content: space-around; } }
+        justify-content: center; } }
     @media only screen and (max-width: 768px) {
       .overview--buttons {
         justify-content: space-between; } }
+    @media only screen and (max-width: 768px) {
+      .overview--buttons {
+        justify-content: space-evenly; } }
   .overview--img {
     flex-basis: 35rem;
     flex-grow: 1;

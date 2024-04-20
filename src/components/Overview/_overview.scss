@@ -116,19 +116,20 @@
     &--buttons{
         @include flexContainer(2rem);
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
         @include respond(tab-port){
             @include flexContainer(1.2rem);
-            justify-content: space-between;
+            justify-content: center;
+    
         }
 
         @include respond(phone){
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         @include respond(small-phone){
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     }
 
