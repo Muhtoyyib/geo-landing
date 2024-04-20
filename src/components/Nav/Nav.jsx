@@ -11,7 +11,7 @@ export default function Nav(){
             <div className="nav">
                 <div className="nav--brand">
                     <Button type="a" link={`/`} className="nav--brand nav--container">
-                        <img src={LogoImg} alt="Laborich"/>
+                        <img src={LogoImg} alt="GeoTopUp"/>
                         <h1> GeoTopUp Inc</h1>
                     </Button>
                 </div>
